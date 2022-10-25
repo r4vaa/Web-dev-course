@@ -1,0 +1,13 @@
+section {
+  width: 80%;
+  height: 800px;
+  background: center/40% no-repeat url(https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1), #050d0c;
+  /* background-size: cover;
+  background-position: bottom; */
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+  font-size: 100px;
+}
