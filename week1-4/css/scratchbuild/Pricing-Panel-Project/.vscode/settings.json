@@ -1,0 +1,7 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.wordWrap": "bounded",
+  "css.completion.triggerPropertyValueCompletion": true,
+  "css.format.enable": true,
+  "css.format.newlineBetweenSelectors": false
+}
