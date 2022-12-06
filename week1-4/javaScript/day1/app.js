@@ -37,14 +37,17 @@
 // else{
 //   console.log("MEH");
 // }
-// const age = 555;
+//  
+// Nesting CONDITIONAL STATEMENTS
+// const password = prompt("enter a password:");
 
-// if(age < 5){
-//   console.log("you are a baby, you get in for free");
-// }else if (age < 10){
-//   console.log("you are a teen you, you have to pay $10");
-// }else if(age < 65){
-//   console.log("You are an adult, you have to pay $20");
-// }else{
-//   console.log("you are a senior, you pay $10");
+// if(password.length >= 6){
+//   if(password.indexOf(" ") === -1){
+//     console.log("Valid Password")
+//   }else {
+//     console.log("password cannot contain spaces");
+//   }
+// }else {
+//   console.log("password is too short! must have 6+ characters");
 // }
+
