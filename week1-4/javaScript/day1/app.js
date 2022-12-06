@@ -50,4 +50,17 @@
 // }else {
 //   console.log("password is too short! must have 6+ characters");
 // }
+// NESTED CONDITIONALS PRACTICE
+// const num =102;
 
+// if(num <= 100){
+//   if(num >= 50){
+//     console.log("HEY!");
+//   }
+// }else{
+//   if(num < 103){
+//     if(num % 2 === 0){
+//       console.log("you got me!!!");
+//     }
+//   }
+// }
