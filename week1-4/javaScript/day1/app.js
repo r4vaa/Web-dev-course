@@ -101,3 +101,20 @@
 // }else {
 //   console.log("FALSY");
 // }
+
+// LOGICAL OPERATORS
+//AND && OPERATOR
+
+// const password = prompt("Enter your password");
+
+// if(password.length >= 6  && password.indexOf(" ") === -1){
+//   console.log("Valid Password")
+// }else {
+//   console.log("INCORRECT PASSWORD FORMAT!!");
+// }
+
+// const mystery = 'Passwor7';
+
+// if(mystery[0]='P' && mystery.length > 5 && mystery.indexOf('7') !== -1){
+//   console.log("you got it")
+// }
