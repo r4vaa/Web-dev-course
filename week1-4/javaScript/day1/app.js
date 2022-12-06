@@ -64,3 +64,40 @@
 //     }
 //   }
 // }
+
+//TRUTHY AND FALSY VALUES
+//ALL JS VALUES HAVE AN INHERENT TRUTHLYNESS AND FALSYNESS ABOUT THEM.
+// FALSY vALUES
+//FALSE, 0 , ""(EMPTY STRING), NaN, null, UNDEFINED.
+
+// const userInput = prompt("enter your name");
+
+// if(userInput){
+//   console.log("TRUTHY!!");
+// }else {
+//   console.log("FALSY!!");
+// }
+
+// if(0){
+//   console.log("TRUTHY");
+// }else {
+//   console.log("FALSY");
+// }
+
+// if(NaN){
+//   console.log("TRUTHY");
+// }else {
+//   console.log("FALSY");
+// }
+
+// if(""){
+//   console.log("TRUTHY");
+// }else {
+//   console.log("FALSY");
+// }
+
+// if(undefined){
+//   console.log("TRUTHY");
+// }else {
+//   console.log("FALSY");
+// }
