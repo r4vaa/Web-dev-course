@@ -130,3 +130,17 @@
 // }else{
 //   console.log("invalid age");
 // }
+
+//NOT ! OPERATOR
+
+// const firstName = prompt("enter your first name");
+// if(!firstName){
+//     firstName = prompt("TRY AGAIN!!!");
+// }
+
+// const age = 45;
+
+// if(!(age >=0 && age < 5 || age >=65)){
+//   console.log("You are not an adult anymore");
+// }
+
