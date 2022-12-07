@@ -37,3 +37,14 @@
 // planets.shift();
 // planets.push('Saturn');
 // planets.unshift('Mercury');
+
+//COMMONLY USED ARRAY METHODS
+// const array1 = ['a','b','c','d'];
+// const array2 = ['e','f','g','h'];
+// array1.concat(array2); this will merge the array2 in array1 but it will not make changes in the original array so we will need it to save in another array.
+
+// array1.includes('a');
+//LOOKS FOR THE VALUE GIVEN IN ARGUMENT.
+//array1.indexOf('a') gives the index of that value.
+//array1.reverse() 
+//REVERSE'S THE VALUE OF THAT ARRAY.
