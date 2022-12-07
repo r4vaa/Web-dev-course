@@ -48,3 +48,15 @@
 //array1.indexOf('a') gives the index of that value.
 //array1.reverse() 
 //REVERSE'S THE VALUE OF THAT ARRAY.
+
+
+//SLICE
+//SLICE COPIES THE VALUES FROM THE ARRAY, GIVEN ARGUMENT
+//array1.slice(4); this will provide array values from the index 4;
+// op-e,f,g,h
+//array.slice(0,4); this will give you the op from 0 to 3; 4 is not the end;
+
+//SPLICE
+//SPLICE REPLACES OR REMOVES THE ELEMENTS
+//array1.splice(1,0,'a'); this will add an element after the 1st index value and will not delete anything as delete count is 0;
+//array1.splice(1,1,'e'); this will delete the 1 element from the 1st index value and will add 'e' at the 1st ;
