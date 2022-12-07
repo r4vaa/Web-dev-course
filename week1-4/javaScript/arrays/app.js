@@ -20,3 +20,20 @@
 
 //barebell.pop();
 //this code will remove the last value of that array for us 60 will be removed from that array
+
+
+//SHIFT AND UNSHIFT
+// let movieLine = ['dheeraj','piyu'];
+// movieLine.shift(); dheeraj will be removed
+// movieLine.shift();  piyu will be removed
+
+// this above code will remove the values from the array from start.
+
+//movieLine.unshift("VIP"); VIP will be added at the start of the array.
+
+// PUSH POP SHIFT UNSHIFT PRACTICE
+// const planets = ['The Moon','Venus', 'Earth', 'Mars', 'Jupiter']; 
+
+// planets.shift();
+// planets.push('Saturn');
+// planets.unshift('Mercury');
