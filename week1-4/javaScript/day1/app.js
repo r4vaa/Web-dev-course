@@ -118,3 +118,15 @@
 // if(mystery[0]='P' && mystery.length > 5 && mystery.indexOf('7') !== -1){
 //   console.log("you got it")
 // }
+//OR || OPERATOR
+
+// const age = 45;
+// if(age>=0 && age < 5 || age >=65){
+//   console.log("FREE");
+// }else if (age>=5 && age < 10){
+//   console.log("$10");
+// }else if(age>=10&& age < 65){
+//  console.log("$20");
+// }else{
+//   console.log("invalid age");
+// }
