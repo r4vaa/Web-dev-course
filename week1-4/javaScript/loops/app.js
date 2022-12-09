@@ -50,3 +50,41 @@
 // for(let i = animals.length -1; i >= 0; i--){
 //   console.log(i, animals[i]);
 // }
+
+// const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"];
+
+// for(let i = 0; i<= people.length; i++){
+//   console.log(people[i].toUpperCase());
+// }
+
+//NESTED LOOP
+// let str = 'LOL';
+
+// for(let i = 0; i <= 4; i++){
+//   console.log("Outer:", i);
+//   for (let j = 0; j < str.length; j++){
+//     console.log('          Inner:', str[j]);
+//   }
+// }
+
+// for (let i = 0; i <=10 ; i++){
+//   console.log(`i is: ${i}`);
+//       for(let j = 1; j < 4; j++){
+//         console.log(`     j is: ${j}`);
+//       }
+
+// }
+
+const seatingChart = [ 
+  ['dheeraj','piyu','marry'],
+  ['mom','dad','brother',"sister"],
+  ['uncle','aunty','nephew','neice']
+] 
+
+for(let i = 0; i < seatingChart.length; i++){
+  console.log(`ROW for 1st array ${i + 1}`);
+  const row = seatingChart[i];
+   for (let j = 0; j < row.length ; j++ ){
+    console.log(row[j]);
+   }
+} 
