@@ -32,3 +32,8 @@
 // for(let i = 10; i <=100000000000; i *=10){
 //   console.log(i);
 // }
+//Infinite Loop
+//DOnot use this loop
+// for(let i =20; i >=0; i++){
+//   console.log(i);
+// }
