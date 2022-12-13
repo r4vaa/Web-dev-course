@@ -74,17 +74,18 @@
 //       }
 
 // }
+//seating chart loop very difficult but easy
+// const seatingChart = [ 
+//   ['dheeraj','piyu','marry'],
+//   ['mom','dad','brother',"sister"],
+//   ['uncle','aunty','nephew','neice']
+// ] 
 
-const seatingChart = [ 
-  ['dheeraj','piyu','marry'],
-  ['mom','dad','brother',"sister"],
-  ['uncle','aunty','nephew','neice']
-] 
+// for(let i = 0; i < seatingChart.length; i++){
+//   console.log(`ROW for 1st array ${i + 1}`);
+//   const row = seatingChart[i];
+//    for (let j = 0; j < row.length ; j++ ){
+//     console.log(row[j]);
+//    }
+// } 
 
-for(let i = 0; i < seatingChart.length; i++){
-  console.log(`ROW for 1st array ${i + 1}`);
-  const row = seatingChart[i];
-   for (let j = 0; j < row.length ; j++ ){
-    console.log(row[j]);
-   }
-} 
