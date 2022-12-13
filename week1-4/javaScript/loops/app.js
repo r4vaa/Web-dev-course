@@ -105,3 +105,15 @@
 //   guess = prompt("enter the secret code ..");;
 // }
 // console.log("Congrats");
+
+//BREAK KEYWORD
+
+let input = prompt("hey Say Something");
+
+while(true){
+
+  input = prompt(input);
+  
+  if (input === 'quit') break;
+}
+console.log("ok you win");
