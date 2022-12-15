@@ -108,12 +108,12 @@
 
 //BREAK KEYWORD
 
-let input = prompt("hey Say Something");
+// let input = prompt("hey Say Something");
 
-while(true){
+// while(true){
 
-  input = prompt(input);
-  
-  if (input === 'quit') break;
-}
-console.log("ok you win");
+//   input = prompt(input);
+
+//   if (input === 'quit') break;
+// }
+// console.log("ok you win");
