@@ -150,3 +150,7 @@
   //     console.log(student);
   //   }
   // }
+
+  // for (char of "hello world"){
+  //   console.log(char);
+  // }
