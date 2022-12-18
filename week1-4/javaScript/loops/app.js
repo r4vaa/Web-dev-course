@@ -154,3 +154,43 @@
   // for (char of "hello world"){
   //   console.log(char);
   // }
+
+//Practice of For of
+  // const numbers = [1,2,3,4,5,6,7,8,9]; 
+
+  // for (let num of numbers){
+  //   console.log(num*num);
+  // }
+
+  let testScores = {
+    dheeraj : 89,
+    piryanka : 99,
+    manish : 87,
+    pranay : 75,
+    didi : 100,
+    guddu : 99.5,
+    divya : 98,
+    pinky : 89 
+  };
+
+
+  // for  (let score in testScores) {
+  //     console.log(`${score} scored ${testScores[score]} `);
+  // }
+// let total = 0;
+// let scores = Object.values(testScores);
+
+//   for(let score of scores ){
+//      total += score;
+     
+//   }
+
+//   console.log(total / scores.length);
+// let scores= Object.values(testScores);
+// let total = 0;
+// for(let i =0; i < scores.length; i++){
+//   total += scores[i]
+ 
+// }
+
+// console.log(total / scores.length);
