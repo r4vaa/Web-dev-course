@@ -162,16 +162,16 @@
   //   console.log(num*num);
   // }
 
-  let testScores = {
-    dheeraj : 89,
-    piryanka : 99,
-    manish : 87,
-    pranay : 75,
-    didi : 100,
-    guddu : 99.5,
-    divya : 98,
-    pinky : 89 
-  };
+  // let testScores = {
+  //   dheeraj : 89,
+  //   piryanka : 99,
+  //   manish : 87,
+  //   pranay : 75,
+  //   didi : 100,
+  //   guddu : 99.5,
+  //   divya : 98,
+  //   pinky : 89 
+  // };
 
 
   // for  (let score in testScores) {
@@ -194,3 +194,50 @@
 // }
 
 // console.log(total / scores.length);
+
+//TODO LIST
+
+  // TODO DELETE an value from an array
+  //toDoList = ["app","add","delete","undo"];
+// let toDelete = parseInt(prompt("Give the index no you want to delete"));
+// while(!toDelete){
+//     toDelete = parseInt(prompt("Give a valid number"));
+// }
+// toDoList.splice(toDelete,1);
+// console.log(toDoList);
+
+//to do list
+
+let input = prompt('what would you like to do');
+const todos = ['Collect Chicken eggs','Clean Litter Box'];
+
+
+while( input !== 'quit' && input !=='q' ){
+   if( input === 'list'){
+    console.log("************");
+    for(let i = 0; i < todos.length; i++){
+      console.log(`${i}: ${todos[i]}`);
+    }
+    console.log("**********");
+  }else if(input === 'new'){
+    const newToDo = prompt("Ok!, what is your new Todo");
+    todos.push(newToDo);
+    console.log(`${newToDo} added to your list`);
+  }else if(input === 'delete'){
+    const index = parseInt(prompt("Enter the index no you want to delete"));
+    if(!Number.isNaN(index)){
+      const deleted = todos.splice(index,1);
+      console.log(`Ok, deleted,${deleted[0]}`);
+    }
+    
+  }
+  input = prompt('what would you like to do');
+}
+console.log('\n');
+console.log("THIS IS THE LIST THAT YOU CREATED");
+console.log("***********");
+for(let i = 0; i<todos.length;i++){
+ console.log(`${i}: ${todos[i]}`);
+}
+
+console.log("OK!, you quit the app")
