@@ -117,3 +117,36 @@
 //   if (input === 'quit') break;
 // }
 // console.log("ok you win");
+
+//FOR OF
+
+// const subreddits = ['cringe', 'funny','notFunny',"hot",'spicy'];
+
+// for (let i = 0 ; i < subreddits.length; i++){
+//   console.log(`Visit subreddits/${subreddits[i]}`);
+// }
+
+// for (let sub of subreddits){
+//   console.log(`Visit Subreddits/${sub}`);
+// }
+
+// const seatingChart = [ 
+//     ['dheeraj','piyu','marry'],
+//     ['mom','dad','brother',"sister"],
+//     ['uncle','aunty','nephew','neice']
+//   ];
+
+
+  // for(let i=0; i < seatingChart.length;i++){
+  //   const row = seatingChart[i];
+  //   console.log(`first itertaion`);
+  //   for(let j=0;j < row.length; j++){
+  //     console.log(row[j]);
+  //   }
+  // }
+
+  // for (let row of seatingChart){
+  //   for(let student of row){
+  //     console.log(student);
+  //   }
+  // }
