@@ -179,21 +179,38 @@
 //   return (days[number])
 // }
 
-const days = {
-    1: 'Monday',
-    2: "Tuesday",
-    3: "Wednesday",
-    4: "Thursday",
-    5: "Friday",
-    6: "Saturday",
-    7: "Sunday"
-  }
+// const days = {
+//     1: 'Monday',
+//     2: "Tuesday",
+//     3: "Wednesday",
+//     4: "Thursday",
+//     5: "Friday",
+//     6: "Saturday",
+//     7: "Sunday"
+//   }
 
-  function returnDay(num){
+//   function returnDay(num){
 
-    if(num < 1 || num >7){
-      return null;
-    }else{
-      return days[num];
-    }
-  } 
+//     if(num < 1 || num >7){
+//       return null;
+//     }else{
+//       return days[num];
+//     }
+//   } 
+
+//SCOPE Variable "  VISIBILITY "
+
+// function collectEggs(){
+//   let totalEggs =6;     // function scope- total eggs is scoped to the collect eggs function
+// }
+
+// totalEggs;
+
+// let bird = 'Scarlet Macaw';
+// function birdWatch(){
+   // let bird = 'Great Blue Heron';
+//   console.log(bird);    
+// }
+// birdWatch()
+// console.log(bird)
+
