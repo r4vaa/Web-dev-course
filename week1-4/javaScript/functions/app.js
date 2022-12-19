@@ -82,3 +82,118 @@
 // isSnakeEyes(2,2);
 // isSnakeEyes(1,5);
 // isSnakeEyes(4,5);
+
+//RETURN
+
+// function add (x,y){
+//   let sum = x + y;
+//   return sum;
+// }
+
+// console.log(add(9,4));
+
+
+// function multiply(num1,num2){
+//   let multiplication = num1 * num2;
+//   return multiplication;
+// }
+
+// function isShortsWeather(temp){
+//   if(temp >= 75){
+//     return true;
+//   }else{
+//     return false;
+//   }
+// }
+
+// function lastElement(num){
+ 
+//    if(num.length === 0){
+//     return null;
+//    }else{
+//     return num[num.length -1];
+//    }
+// }
+
+// function capitalize(str){
+
+//   let alpha = str.slice(0,1).toUpperCase();
+//   let newAlpha = str.replace(str.charAt(),alpha);
+//   return newAlpha; 
+
+// }
+
+
+// function sumArray(arr){
+//   let total= 0;
+//   for(let i = 0; i < arr.length;i++){
+//     total += arr[i];
+//   }return total;
+// }
+
+// function returDay(x){
+//   switch(x){
+//     case 1:
+//       return 'Monday'
+//       break;
+//       case 2:
+//         return 'Tuesday'
+//         break;
+//         case 3:
+//         return 'Wednesday'
+//         break;
+//         case 4:
+//         return 'Thursday'
+//         break;
+//         case 5:
+//         return 'Friday'
+//         break;
+//         case 6:
+//         return 'Saturday'
+//         break;
+//         case 7:
+//         return 'Sunday'
+//         break;
+
+//         default:
+//           return null
+//           break
+//   }
+// }
+
+
+// const days = {
+//   1: 'Monday',
+//   2: "Tuesday",
+//   3: "Wednesday",
+//   4: "Thursday",
+//   5: "Friday",
+//   6: "Saturday",
+//   7: "Sunday"
+// }
+
+// function returnDay (number)  {
+//   if(number < 1 || number > 7) {
+//       return null;
+//   }
+//   return (days[number])
+// }
+
+const days = {
+    1: 'Monday',
+    2: "Tuesday",
+    3: "Wednesday",
+    4: "Thursday",
+    5: "Friday",
+    6: "Saturday",
+    7: "Sunday"
+  }
+
+  function returnDay(num){
+
+    if(num < 1 || num >7){
+      return null;
+    }else{
+      return days[num];
+    }
+  } 
