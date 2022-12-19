@@ -40,3 +40,26 @@
 // }
 
 // rant("I hate beets");
+// function greet(firstName, lastName){
+//   console.log(`Hey there, ${firstName} ${lastName[0]}.`);
+// }
+
+// greet('Dheeraj','Patil');
+// greet('Patil','Dheeraj');
+
+// function repeat(str, numTimes){
+//    let result = '';
+//      for(let i=0;i < numTimes;i++){
+//       result += str;
+//      }
+//      console.log(result);
+// }
+
+// repeat(' * ',5);
+// repeat(' * ',4);
+// repeat(' * ',3);
+// repeat('  * ',2);
+// repeat('   *',1);
+
+
+//CONCATENATION STR + STR = STR STR || STR1 += STR2 =  STR1STR2
