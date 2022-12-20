@@ -239,3 +239,24 @@
 // }
 
 // console.log(i);
+
+
+//                    LEXICAL SCOPE
+
+// function bankRobbery(){
+//    const heroes = ['Spiderman','wolverine','black Panther','wonder woman'];
+        
+//    function cryForHelp(){
+//          let color = 'Purple';
+//       function inner(){
+//          for(let hero of heroes){
+//          console.log(`please Help us,${hero.toUpperCase()}`);
+         
+//       }  
+//       console.log(color);
+//       }
+//       inner();
+//    }
+//    cryForHelp();
+// }
+// bankRobbery(); 
