@@ -292,3 +292,27 @@
 // }
 
 // rollDices(rollDie);
+
+
+//             RETURNING FUNCTIONS
+
+
+// function makeMysteryFunction(){
+//    let rand = Math.random();
+//    if(rand > 0.5){
+//       return function(){
+//          console.log("You got the good function");
+//          console.log("YOu win thenga");
+//       }
+//    }else{
+//       return function(){
+//          alert("You got a virus");
+//          alert("DO NO CLOSE THIS WINDOW");
+//          alert("DO NO CLOSE THIS WINDOW");
+//          alert("DO NO CLOSE THIS WINDOW");
+//          alert("DO NO CLOSE THIS WINDOW");
+//       }
+//    }
+// }
+
+
