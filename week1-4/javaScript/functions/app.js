@@ -260,3 +260,15 @@
 //    cryForHelp();
 // }
 // bankRobbery(); 
+
+//              FUNCTION EXPRESSION
+// function are used a values in javascript we can do allot with functions
+// const sum = function(x,y){
+//    return x + y;
+// }
+// console.log(sum(7,8));
+
+
+// const square = function(x){
+//    return x * x ;
+// }
