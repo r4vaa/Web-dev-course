@@ -316,3 +316,13 @@
 // }
 
 
+// function makeBetweenFunction(min,max){
+//    return function(num){
+//       return num >= min && num <= max;
+//    }
+// }
+
+// const isChild = makeBetweenFunction(0,18);
+// const isAdult = makeBetweenFunction(19,65);
+// const isSenior = makeBetweenFunction(65,120);
+
