@@ -214,3 +214,28 @@
 // birdWatch()
 // console.log(bird)
 
+// const creature ="Common Sea Dragon";
+
+// function scubaDriver () {
+//    const creature = 'Spanish Dancer';
+//    console.log(creature);
+// }
+
+// scubaDriver();
+
+                           //BLOCK SCOPE
+
+//  let radius = 8;
+//  if(radius > 0){
+//    const PI = 3.14159;
+//    let msg = 'HIIII!'
+//  }                          
+
+//  console.log(radius);
+//  console.log(msg); 
+
+// for(let i =0; i < 5;i++){
+//    console.log(`${i}, hii`);
+// }
+
+// console.log(i);
