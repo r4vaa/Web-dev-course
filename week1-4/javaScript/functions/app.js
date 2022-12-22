@@ -328,14 +328,29 @@
 
 //           METHODS
 
-const math = {
-   multiply : function(x,y){
-      return x * y; 
-   },
-   divide : function (x,y){
-      return x / y;
-   },
-   square : function(x,y){
-      return x*x;
-   }
-}
+// const math = {
+//    multiply : function(x,y){
+//       return x * y; 
+//    },
+//    divide : function (x,y){
+//       return x / y;
+//    },
+//    square : function(x,y){
+//       return x*x;
+//    }
+// }
+
+//  SHORTHAND METHOD
+
+// const math = {
+//    multiply (x,y){
+//       return x * y;
+//    },
+//    add (x , y){
+//       return x + y; 
+//    },
+
+//    divide(x,y){
+//       return x / y;
+//    }
+// }
