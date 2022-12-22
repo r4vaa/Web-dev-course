@@ -326,3 +326,16 @@
 // const isAdult = makeBetweenFunction(19,65);
 // const isSenior = makeBetweenFunction(65,120);
 
+//           METHODS
+
+const math = {
+   multiply : function(x,y){
+      return x * y; 
+   },
+   divide : function (x,y){
+      return x / y;
+   },
+   square : function(x,y){
+      return x*x;
+   }
+}
