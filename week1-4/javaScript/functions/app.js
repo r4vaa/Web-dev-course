@@ -365,3 +365,21 @@
 //        return side * 4;
 //    }
 // }
+
+
+//                'THIS' in METHODS
+ 
+// const cat = {
+//    name: 'blue Steele',
+//    color: 'grey',
+//    breed: 'scottich fold',
+//    meow(){
+//       console.log("THIS is:",this);
+//       console.log(`${this.name} says MeoWWW` );
+//    }
+// }
+
+// const meow2 = cat.meow; 
+
+
+// THE VALUE OF 'THIS'  DEPENDS ON THE INVOCATIONN CONTEXT OF THE FUNCTION IT IS USED IN.
