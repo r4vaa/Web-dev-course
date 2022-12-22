@@ -383,3 +383,15 @@
 
 
 // THE VALUE OF 'THIS'  DEPENDS ON THE INVOCATIONN CONTEXT OF THE FUNCTION IT IS USED IN.
+
+//PRACTICE
+// const hen = {
+//    name: 'Helen',
+//    eggCount : 0 ,
+//    layAnEgg (){
+      
+//        this.eggCount+1;
+//        return "EGG";
+      
+//    }
+// }
