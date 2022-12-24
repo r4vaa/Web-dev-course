@@ -395,3 +395,27 @@
       
 //    }
 // }
+
+// TRY CATCH
+
+
+// try {
+//    hello.toUpperCase();
+
+// }catch(e){
+//    console.log(e);
+//    console.log('ERROR!!!!!!!!');
+// }
+// console.log("AFTER"); 
+
+
+// function yell(msg){
+//    try{
+//       console.log (msg.toUpperCase().repeat(3));
+//    }
+//    catch(e){
+//          console.log(e);
+//          console.log("PLEASE Pass a String next time!");
+//    }
+ 
+// }
