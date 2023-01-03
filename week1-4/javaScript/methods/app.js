@@ -149,3 +149,39 @@
 //   Math.floor(Math.random() * 6) +1;
 // )
 // above code wont work.
+
+// const movies = [
+//       {
+//         title : 'one piece',
+//         score : 90
+//       },
+//       {
+//         title : 'naruto',
+//         score : 99
+//       },
+//       {
+//         title : 'parasite',
+//         score : 95
+//       },
+//       {
+//         title : 'Alien',
+//         score : 93
+//       },{
+//         title : 'Predator',
+//         score : 91
+//       }
+//     ];
+
+    //MULTIPLE USE OF ARROW FUNCTION AND IMPLICIT RETURN
+
+    // const newMovies = movies.map((movie)=>{
+    //   return `${movie.title} , ${movie.score / 10}`;
+    // })
+
+    
+  
+    // const newMovies = movies.map( movie => (
+    //   `${movie.title} , ${movie.score / 10}` 
+    // ))
+
+  // const newMovies = movies.map( movie =>  `${movie.title} , ${movie.score /10}`)
