@@ -203,3 +203,38 @@
 
 //   clearInterval(id);
 
+// const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
+
+// const isOdd = numbers.filter( num => num % 3 === 0);
+// const smallNums = numbers.filter( n => n < 10);
+
+// const movies = [
+//         {
+//           title : 'one piece',
+//           score : 90,
+//           year : 1995
+//         },
+//         {
+//           title : 'naruto',
+//           score : 99,
+//           year : 2000
+//         },
+//         {
+//           title : 'parasite',
+//           score : 95,
+//           year : 2002
+//         },
+//         {
+//           title : 'Alien',
+//           score : 93,
+//           year : 2010
+//         },{
+//           title : 'Predator',
+//           score : 91,
+//           year : 2012
+//         }
+//       ];
+  
+// const goodMovies = movies.filter(movie => movie.score > 80).map(movie => movie.title);
+
+// const mappedMovies = movies.map(movie => movie.title);
