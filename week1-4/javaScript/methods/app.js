@@ -104,3 +104,24 @@
 // const firstNames =  fullNames.map(function(name){
 //   return name.first;
 // })
+
+// Arrow Function
+
+// const square = (x) => {
+//   return x * x;
+// }
+// console.log(square(4));
+
+// const sum = (x,y) => {
+//   return x + y;
+// }
+
+// const rollDie = () => {
+//   return Math.floor(Math.random()*6)+1;
+// }
+
+//if we have a single parameter we can pass a parameter without adding parenthesis , example shown below
+
+// const square = x => {
+//   return x * x;
+// }
