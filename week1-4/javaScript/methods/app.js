@@ -185,3 +185,12 @@
     // ))
 
   // const newMovies = movies.map( movie =>  `${movie.title} , ${movie.score /10}`)
+
+  //setTimeout and setInterval
+
+  // console.log("Hello!!!")
+  // setTimeout(()=> {
+  //   console.log(".... are you still there?")
+  // }, 3000)
+
+  // console.log("GOODBYE!!!");
