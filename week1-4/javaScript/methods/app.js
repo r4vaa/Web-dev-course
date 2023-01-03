@@ -125,3 +125,27 @@
 // const square = x => {
 //   return x * x;
 // }
+
+// const greet = name => {
+//   return `hey ${name}`;
+// }
+
+//IMPLICIT RETURN
+//implicit return work only when we have one and only on expression
+
+
+// const rollDie = () => (
+//   Math.floor(Math.random() * 6)+1
+// )
+ 
+// const isEven = num =>  num % 2 === 0;
+
+// const add = (a,b) => a + b
+
+//non implicit return
+
+// const rollDie = () => (
+//   let msg = 'addd'
+//   Math.floor(Math.random() * 6) +1;
+// )
+// above code wont work.
