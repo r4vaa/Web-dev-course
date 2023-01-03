@@ -238,3 +238,14 @@
 // const goodMovies = movies.filter(movie => movie.score > 80).map(movie => movie.title);
 
 // const mappedMovies = movies.map(movie => movie.title);
+
+// const userNames = ['mark', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan'];
+// // const validUsername = userNames.filter( userName => userName.length < 10);
+
+// function validUsername(username){
+//   const filterArr = userNames.filter( function (name){
+//     return name.length < 10;
+//   })
+//   return filterArr;
+// }
+
