@@ -238,7 +238,7 @@
 // const goodMovies = movies.filter(movie => movie.score > 80).map(movie => movie.title);
 
 // const mappedMovies = movies.map(movie => movie.title);
-
+ 
 // const userNames = ['mark', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan'];
 // // const validUsername = userNames.filter( userName => userName.length < 10);
 
@@ -249,3 +249,43 @@
 //   return filterArr;
 // }
 
+// const exams = [80,98,92,78,77,90,89,84,81,77]
+
+
+// console.log(exams.every(score => score >= 75 ))
+
+// const movies = [
+//           {
+//             title : 'one piece',
+//             score : 90,
+//             year : 1995
+//           },
+//           {
+//             title : 'naruto',
+//             score : 99,
+//             year : 2000
+//           },
+//           {
+//             title : 'parasite',
+//             score : 95,
+//             year : 2002
+//           },
+//           {
+//             title : 'Alien',
+//             score : 93,
+//             year : 2010
+//           },{
+//             title : 'Predator',
+//             score : 91,
+//             year : 2012
+//           }
+//         ];
+
+//   console.log( movies.some(movie => movie.year >= 2000 )); 
+
+//   const arr = [1,4,6,8];
+
+//   function allEven(arr){
+//     const orEven = arr.every(e => e % 2 === 0);
+//     return orEven;
+//   }
