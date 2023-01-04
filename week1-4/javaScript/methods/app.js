@@ -289,3 +289,14 @@
 //     const orEven = arr.every(e => e % 2 === 0);
 //     return orEven;
 //   }
+// function validUserNames(username){
+//   const filterArr = username.filter( function (name){
+//     return name.length < 10;
+//   })
+//   return filterArr;
+// }
+
+// validUserNames(['mark%', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan']);
+
+
+//REDUCE METHOD
