@@ -10,82 +10,84 @@
 
 // for each
 
-// const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
 
 
 
-// numbers.forEach(function (el){
-//    if(el % 2 === 0 ){
-//     console.log(el)
-//   }
-// })
+numbers.forEach(function (el){
+   if(el % 2 === 0 ){
+    console.log(el)
+  }
+})
 
 
-// const movies = [
-//   {
-//     title : 'one piece',
-//     score : 90
-//   },
-//   {
-//     title : 'naruto',
-//     score : 99
-//   },
-//   {
-//     title : 'parasite',
-//     score : 95
-//   },
-//   {
-//     title : 'Alien',
-//     score : 93
-//   },{
-//     title : 'Predator',
-//     score : 91
-//   }
-// ];
+const movies = [
+  {
+    title : 'one piece',
+    score : 90
+  },
+  {
+    title : 'naruto',
+    score : 99
+  },
+  {
+    title : 'parasite',
+    score : 95
+  },
+  {
+    title : 'Alien',
+    score : 93
+  },{
+    title : 'Predator',
+    score : 91
+  }
+];
 
-// movies.forEach(function(movie){
-//   console.log(`${movie.title} ${movie.score}/100`);
-// })
+movies.forEach(function(movie){
+  console.log(`${movie.title} ${movie.score}/100`);
+})
+
+//  *******************END*********************   //
 
 // THE MAP Method
 
-// const texts = ['rofl','lol','omg','ttyl']
-// const caps = texts.map(function(t){
-//    return t.toUpperCase() ;
-// })
+const texts = ['rofl','lol','omg','ttyl']
+const caps = texts.map(function(t){
+   return t.toUpperCase() ;
+})
 
-// const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
-// const double = numbers.map(function(num){
-//   return num * 2;
-// })
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
+const double = numbers.map(function(num){
+  return num * 2;
+})
 
 
 
-// const movies = [
-//     {
-//       title : 'one piece',
-//       score : 90
-//     },
-//     {
-//       title : 'naruto',
-//       score : 99
-//     },
-//     {
-//       title : 'parasite',
-//       score : 95
-//     },
-//     {
-//       title : 'Alien',
-//       score : 93
-//     },{
-//       title : 'Predator',
-//       score : 91
-//     }
-//   ];
+const movies = [
+    {
+      title : 'one piece',
+      score : 90
+    },
+    {
+      title : 'naruto',
+      score : 99
+    },
+    {
+      title : 'parasite',
+      score : 95
+    },
+    {
+      title : 'Alien',
+      score : 93
+    },{
+      title : 'Predator',
+      score : 91
+    }
+  ];
 
-//   const titles = movies.map(function(movie){
-//     return movie.title.toUpperCase();
-//   }) 
+  const titles = movies.map(function(movie){
+    return movie.title.toUpperCase();
+  }) 
 // Map Practice
 // It's time to get practice with the map method!
 
@@ -98,49 +100,57 @@
 
 // This exercise has been updated, you may see Q&A threads from this lecture that relate to the original exercise which no longer exists. They can be ignored.
 
-// const fullNames = [{first: 'Albus', last: 'Dumbledore'}, {first: 'Harry', last: 'Potter'}, {first: 'Hermione', last: 'Granger'}, {first: 'Ron', last: 'Weasley'}, {first: 'Rubeus', last: 'Hagrid'}, {first: 'Minerva', last: 'McGonagall'}, {first: 'Severus', last: 'Snape'}];
+const fullNames = [{first: 'Albus', last: 'Dumbledore'}, {first: 'Harry', last: 'Potter'}, {first: 'Hermione', last: 'Granger'}, {first: 'Ron', last: 'Weasley'}, {first: 'Rubeus', last: 'Hagrid'}, {first: 'Minerva', last: 'McGonagall'}, {first: 'Severus', last: 'Snape'}];
 
 
-// const firstNames =  fullNames.map(function(name){
-//   return name.first;
-// })
+const firstNames =  fullNames.map(function(name){
+  return name.first;
+})
+
+//  *******************END*********************   //
 
 // Arrow Function
 
-// const square = (x) => {
-//   return x * x;
-// }
-// console.log(square(4));
+const square = (x) => {
+  return x * x;
+}
+console.log(square(4));
 
-// const sum = (x,y) => {
-//   return x + y;
-// }
+const sum = (x,y) => {
+  return x + y;
+}
 
-// const rollDie = () => {
-//   return Math.floor(Math.random()*6)+1;
-// }
+const rollDie = () => {
+  return Math.floor(Math.random()*6)+1;
+}
+
+//  *******************END*********************   //
 
 //if we have a single parameter we can pass a parameter without adding parenthesis , example shown below
 
-// const square = x => {
-//   return x * x;
-// }
+const square = x => {
+  return x * x;
+}
 
-// const greet = name => {
-//   return `hey ${name}`;
-// }
+const greet = name => {
+  return `hey ${name}`;
+}
+
+//  *******************END*********************   //
 
 //IMPLICIT RETURN
 //implicit return work only when we have one and only on expression
 
 
-// const rollDie = () => (
-//   Math.floor(Math.random() * 6)+1
-// )
+const rollDie = () => (
+  Math.floor(Math.random() * 6)+1
+)
  
-// const isEven = num =>  num % 2 === 0;
+const isEven = num =>  num % 2 === 0;
 
-// const add = (a,b) => a + b
+const add = (a,b) => a + b
+
+//  *******************END*********************   //
 
 //non implicit return
 
@@ -150,50 +160,54 @@
 // )
 // above code wont work.
 
-// const movies = [
-//       {
-//         title : 'one piece',
-//         score : 90
-//       },
-//       {
-//         title : 'naruto',
-//         score : 99
-//       },
-//       {
-//         title : 'parasite',
-//         score : 95
-//       },
-//       {
-//         title : 'Alien',
-//         score : 93
-//       },{
-//         title : 'Predator',
-//         score : 91
-//       }
-//     ];
-
+const movies = [
+      {
+        title : 'one piece',
+        score : 90
+      },
+      {
+        title : 'naruto',
+        score : 99
+      },
+      {
+        title : 'parasite',
+        score : 95
+      },
+      {
+        title : 'Alien',
+        score : 93
+      },{
+        title : 'Predator',
+        score : 91
+      }
+    ];
+//  *******************END*********************   //
     //MULTIPLE USE OF ARROW FUNCTION AND IMPLICIT RETURN
 
-    // const newMovies = movies.map((movie)=>{
-    //   return `${movie.title} , ${movie.score / 10}`;
-    // })
+    const newMovies = movies.map((movie)=>{
+      return `${movie.title} , ${movie.score / 10}`;
+    })
 
     
   
-    // const newMovies = movies.map( movie => (
-    //   `${movie.title} , ${movie.score / 10}` 
-    // ))
+    const newMovies = movies.map( movie => (
+      `${movie.title} , ${movie.score / 10}` 
+    ))
 
-  // const newMovies = movies.map( movie =>  `${movie.title} , ${movie.score /10}`)
+  const newMovies = movies.map( movie =>  `${movie.title} , ${movie.score /10}`)
+
+
+//  *******************END*********************   //
+
 
   //setTimeout and setInterval
 
-  // console.log("Hello!!!")
-  // setTimeout(()=> {
-  //   console.log(".... are you still there?")
-  // }, 3000)
+  console.log("Hello!!!")
+  setTimeout(()=> {
+    console.log(".... are you still there?")
+  }, 3000)
 
-  // console.log("GOODBYE!!!");
+  console.log("GOODBYE!!!");
 
   // repeat something at interval
 
@@ -203,151 +217,175 @@
 
 //   clearInterval(id);
 
-// const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
+//  *******************END*********************   //
 
-// const isOdd = numbers.filter( num => num % 3 === 0);
-// const smallNums = numbers.filter( n => n < 10);
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
 
-// const movies = [
-//         {
-//           title : 'one piece',
-//           score : 90,
-//           year : 1995
-//         },
-//         {
-//           title : 'naruto',
-//           score : 99,
-//           year : 2000
-//         },
-//         {
-//           title : 'parasite',
-//           score : 95,
-//           year : 2002
-//         },
-//         {
-//           title : 'Alien',
-//           score : 93,
-//           year : 2010
-//         },{
-//           title : 'Predator',
-//           score : 91,
-//           year : 2012
-//         }
-//       ];
+const isOdd = numbers.filter( num => num % 3 === 0);
+const smallNums = numbers.filter( n => n < 10);
+
+const movies = [
+        {
+          title : 'one piece',
+          score : 90,
+          year : 1995
+        },
+        {
+          title : 'naruto',
+          score : 99,
+          year : 2000
+        },
+        {
+          title : 'parasite',
+          score : 95,
+          year : 2002
+        },
+        {
+          title : 'Alien',
+          score : 93,
+          year : 2010
+        },{
+          title : 'Predator',
+          score : 91,
+          year : 2012
+        }
+      ];
   
-// const goodMovies = movies.filter(movie => movie.score > 80).map(movie => movie.title);
+const goodMovies = movies.filter(movie => movie.score > 80).map(movie => movie.title);
 
-// const mappedMovies = movies.map(movie => movie.title);
+const mappedMovies = movies.map(movie => movie.title);
  
-// const userNames = ['mark', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan'];
-// // const validUsername = userNames.filter( userName => userName.length < 10);
+const userNames = ['mark', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan'];
+const validUsername = userNames.filter( userName => userName.length < 10);
 
-// function validUsername(username){
-//   const filterArr = userNames.filter( function (name){
-//     return name.length < 10;
-//   })
-//   return filterArr;
-// }
+function validUsername(username){
+  const filterArr = userNames.filter( function (name){
+    return name.length < 10;
+  })
+  return filterArr;
+}
 
-// const exams = [80,98,92,78,77,90,89,84,81,77]
-
-
-// console.log(exams.every(score => score >= 75 ))
-
-// const movies = [
-//           {
-//             title : 'one piece',
-//             score : 90,
-//             year : 1995
-//           },
-//           {
-//             title : 'naruto',
-//             score : 99,
-//             year : 2000
-//           },
-//           {
-//             title : 'parasite',
-//             score : 95,
-//             year : 2002
-//           },
-//           {
-//             title : 'Alien',
-//             score : 93,
-//             year : 2010
-//           },{
-//             title : 'Predator',
-//             score : 91,
-//             year : 2012
-//           }
-//         ];
-
-//   console.log( movies.some(movie => movie.year >= 2000 )); 
-
-//   const arr = [1,4,6,8];
-
-//   function allEven(arr){
-//     const orEven = arr.every(e => e % 2 === 0);
-//     return orEven;
-//   }
-
-// function validUserNames(username){
-//   const filterArr = username.filter( function (name){
-//     return name.length < 10;
-//   })
-//   return filterArr;
-// }
-
-// validUserNames(['mark%', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan']);
+const exams = [80,98,92,78,77,90,89,84,81,77]
 
 
+console.log(exams.every(score => score >= 75 ))
+
+const movies = [
+          {
+            title : 'one piece',
+            score : 90,
+            year : 1995
+          },
+          {
+            title : 'naruto',
+            score : 99,
+            year : 2000
+          },
+          {
+            title : 'parasite',
+            score : 95,
+            year : 2002
+          },
+          {
+            title : 'Alien',
+            score : 93,
+            year : 2010
+          },{
+            title : 'Predator',
+            score : 91,
+            year : 2012
+          }
+        ];
+
+  console.log( movies.some(movie => movie.year >= 2000 )); 
+
+  const arr = [1,4,6,8];
+
+  function allEven(arr){
+    const orEven = arr.every(e => e % 2 === 0);
+    return orEven;
+  }
+
+function validUserNames(username){
+  const filterArr = username.filter( function (name){
+    return name.length < 10;
+  })
+  return filterArr;
+}
+
+validUserNames(['mark%', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan']);
+
+//  *******************END*********************   //
 //REDUCE METHOD
 
-// const prices = [99.9, 39.99 , 49.99, 89.99];
+const prices = [99.9, 39.99 , 49.99, 89.99];
 
-// const total = prices.reduce((total,price) => {
-//   return total + price;
-// })
+const total = prices.reduce((total,price) => {
+  return total + price;
+})
 
-// const minPrice = prices.reduce((min, price)=>{
-//   if(price < min){
-//     return price;
-//   }
-//   return min
-// })
+const minPrice = prices.reduce((min, price)=>{
+  if(price < min){
+    return price;
+  }
+  return min
+})
 
-// const movies = [
-//           {
-//             title : 'one piece',
-//             score : 90,
-//             year : 1995
-//           },
-//           {
-//             title : 'naruto',
-//             score : 99,
-//             year : 2000
-//           },
-//           {
-//             title : 'parasite',
-//             score : 95,
-//             year : 2002
-//           },
-//           {
-//             title : 'Alien',
-//             score : 93,
-//             year : 2010
-//           },{
-//             title : 'Predator',
-//             score : 91,
-//             year : 2012
-//           }
-//         ];
+const movies = [
+          {
+            title : 'one piece',
+            score : 90,
+            year : 1995
+          },
+          {
+            title : 'naruto',
+            score : 99,
+            year : 2000
+          },
+          {
+            title : 'parasite',
+            score : 95,
+            year : 2002
+          },
+          {
+            title : 'Alien',
+            score : 93,
+            year : 2010
+          },{
+            title : 'Predator',
+            score : 91,
+            year : 2012
+          }
+        ];
 
-//  const ratings =  movies.reduce((highRated,currentMovie) => {
-//     if(currentMovie.year < highRated.year){
-//       return currentMovie;
-//     }
-//     return highRated;
-//   })
+ const ratings =  movies.reduce((highRated,currentMovie) => {
+    if(currentMovie.year < highRated.year){
+      return currentMovie;
+    }
+    return highRated;
+  })
 // // reduce function with a specific accumulator
-//   const evens = [2, 4, 6, 8];
-//   evens.reduce((sum, num) => sum + num, 60);
+  const evens = [2, 4, 6, 8];
+  evens.reduce((sum, num) => sum + num, 60);
+
+//  *******************END*********************   //
+
+
+// THIS
+ // this keyword works differenlty in every funciton
+const person = {
+        firstName : 'Dheeraj',
+        lastName : 'Patil',
+        fullName : function(){
+        return  `${this.firstName} ${this.lastName}`
+        },
+        shoutName: function(){
+          setTimeout(function(){
+            console.log(this)
+            console.log(this.fullName());
+          })
+        }
+}
+
+
+//  *******************END*********************   //
