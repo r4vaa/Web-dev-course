@@ -289,6 +289,7 @@
 //     const orEven = arr.every(e => e % 2 === 0);
 //     return orEven;
 //   }
+
 // function validUserNames(username){
 //   const filterArr = username.filter( function (name){
 //     return name.length < 10;
@@ -300,3 +301,53 @@
 
 
 //REDUCE METHOD
+
+const prices = [99.9, 39.99 , 49.99, 89.99];
+
+const total = prices.reduce((total,price) => {
+  return total + price;
+})
+
+const minPrice = prices.reduce((min, price)=>{
+  if(price < min){
+    return price;
+  }
+  return min
+})
+
+const movies = [
+          {
+            title : 'one piece',
+            score : 90,
+            year : 1995
+          },
+          {
+            title : 'naruto',
+            score : 99,
+            year : 2000
+          },
+          {
+            title : 'parasite',
+            score : 95,
+            year : 2002
+          },
+          {
+            title : 'Alien',
+            score : 93,
+            year : 2010
+          },{
+            title : 'Predator',
+            score : 91,
+            year : 2012
+          }
+        ];
+
+ const ratings =  movies.reduce((highRated,currentMovie) => {
+    if(currentMovie.year < highRated.year){
+      return currentMovie;
+    }
+    return highRated;
+  })
+
+  const evens = [2, 4, 6, 8];
+  evens.reduce((sum, num) => sum + num);
