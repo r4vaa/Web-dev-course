@@ -52,3 +52,16 @@
 // }
 
 // *****                END                       *****//
+
+//        SPREAD in Funciton Calls                    //
+
+// const nums = [13,4,5,21,3,31,44444444];
+
+// console.log(Math.max(...nums));
+
+// console.log("asd" , 'as','asada','dadsadasda');
+
+// console.log('hello');
+// console.log(... 'hello');
+
+// just adding the spread syntax (... element/array) we can spread the and iterable element or array.
