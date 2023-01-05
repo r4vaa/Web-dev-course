@@ -65,3 +65,41 @@
 // console.log(... 'hello');
 
 // just adding the spread syntax (... element/array) we can spread the and iterable element or array.
+
+// *****                END                       *****//
+
+//        SPREAD in Array literals                    //
+
+// const cats = ['blue','Scout','Rocket'];
+// const dogs = ['Rusty', 'batatya'];
+
+// const allPets = [...cats, ...dogs];  // combining two arrays 
+
+// const allPets1 = [1,2,3,...cats, ...dogs,'habibi'];  // combinig two arrays and pushing new elements
+
+// const hello = ["helloa"];
+// console.log(...hello[0]); // accessing string inside an array
+
+// *****                END                       *****//
+
+//               SPREAD in Objects                   //
+
+// const feline = { legs: 4, family: 'Felidae'};
+// const canine = { family: 'Caninae' , furry: true };
+
+// const dog = {...canine, isPet: true };
+
+// const lion = { ...feline, genus: 'Panthera'};
+
+// const catDog = { ...feline, ...canine};
+
+// const dataFromForm = { 
+//           email : 'andraa@gmail.com',
+//           password : 'ss@das11',
+//           username : 'fakename'
+// }
+
+// const newUser = {...dataFromForm, id:222, isAdmin: true };
+
+
+// *****                END                       *****//
