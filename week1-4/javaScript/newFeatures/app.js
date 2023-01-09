@@ -119,10 +119,33 @@
 
 // }
 
-function raceResults(gold,silver,...everyoneElse){
-  console.log(`GOLD medal goes to: ${gold}`);
-  console.log(`SILVER medal goes to: ${silver}`);
-  console.log(`And thanks to everyone else : ${everyoneElse}`)
-}
+// function raceResults(gold,silver,...everyoneElse){
+//   console.log(`GOLD medal goes to: ${gold}`);
+//   console.log(`SILVER medal goes to: ${silver}`);
+//   console.log(`And thanks to everyone else : ${everyoneElse}`)
+// }
 
-raceResults('Dheeraj','manish','priyanka','pranay','mummy','pappa');
+// raceResults('Dheeraj','manish','priyanka','pranay','mummy','pappa');
+
+
+// *****                END                       *****//
+
+//                     Destructuring Arrays                   //
+
+
+// const scores = [929321,899341,888336,772739,543671,243567,111934];
+
+// const [gold, silver, bronze,...everyoneElse] = scores;
+
+// const raceResults = [ 'Dheeraj','Manish', 'Priyanka','dheerya','hagrya'];
+
+// const [gold, silver , bronze, ...everyoneElse] = raceResults;
+
+// instead of writing we can use destructuring arrays concepts.were we can give the arrays a distinct variable.
+
+// const gold = scores[0];
+
+// *****                END                       *****//
+
+
+//                     Destructuring Objects                  //
