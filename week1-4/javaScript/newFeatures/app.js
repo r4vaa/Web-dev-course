@@ -103,3 +103,26 @@
 
 
 // *****                END                       *****//
+
+//                     REST Params                   //
+
+// function sum() {
+//   return arguments.reduce((x,y) =>{
+//     return x + y;
+//   })
+// } this will not work
+
+//Rest Params
+// function sum(...nums){
+
+//   return nums.reduce((total,el) => total + el );
+
+// }
+
+function raceResults(gold,silver,...everyoneElse){
+  console.log(`GOLD medal goes to: ${gold}`);
+  console.log(`SILVER medal goes to: ${silver}`);
+  console.log(`And thanks to everyone else : ${everyoneElse}`)
+}
+
+raceResults('Dheeraj','manish','priyanka','pranay','mummy','pappa');
