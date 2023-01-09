@@ -190,3 +190,78 @@
 
 
 // *****                END                       *****//
+
+
+//                     Destructuring Params            //
+
+
+const user =  {
+        email : 'patildheeraj56@yyy.com',
+        password : 'sdadasd',
+        firstName : 'Dheeraj',
+        lastName : 'Patil',
+        born : 1995,
+        died : 'Not yet',
+        bio : 'Currently AML analyst, working for hudl',
+        city : 'Vasai',
+        state : 'Maharashtra'
+  }
+
+function fullName(user){
+    const {firstName, lastName } = user;
+  return ` ${firstName} ${lastName}`;
+}
+
+function fullName({firstName,lastName}){
+          return `${firstName} ${lastName}`
+}
+
+
+const movies =[ 
+  {
+    title :' One piece',
+    score : 99,
+    year : 1995
+  },
+  {
+    title :'two round',
+    score : 90,
+    year : 1994
+  },
+  {
+    title :'teri dewani',
+    score : 98,
+    year : 2010
+  },
+  {
+    title :'everything for veryone',
+    score : 89,
+    year : 2111
+  },
+  {
+    title :'Not worth it',
+    score : 88,
+    year : 1994
+  },
+  {
+    title :'Kala kawwa',
+    score : 91,
+    year : 1933
+  }
+]
+
+movies.filter((movie) => {
+  return movie.score >= 90;
+})
+
+movies.filter(({score}) => score >=90 );
+
+movies.map( movie => {
+  return `${movie.title} (${movie.year} is rated ${movie.score})`
+})
+
+movies.map(({title,year,score})=> {
+  return `${title} (${year} is rated ${score})`
+})
+
+// *****                END                       *****//
