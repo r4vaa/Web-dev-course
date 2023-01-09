@@ -149,3 +149,44 @@
 
 
 //                     Destructuring Objects                  //
+
+
+// const user =  {
+//       email : 'patildheeraj56@yyy.com',
+//       password : 'sdadasd',
+//       firstName : 'Dheeraj',
+//       lastName : 'Patil',
+//       born : 1995,
+//       died : 'Not yet',
+//       bio : 'Currently AML analyst, working for hudl',
+//       city : 'Vasai',
+//       state : 'Maharashtra'
+// }
+
+// const firstName = user.firstName;
+// const lastName = user.lastName;
+// const email = user.email;
+
+// const {email, firstName, lastName,bio } =  user;
+
+// renaming and object property to a new one with destructuring objects
+
+// const { born : birthYear, died : deathYear} = user;
+
+
+// const user2 = {
+//           email : 'patilp56@yyy.com',
+//           password : 'sdadasd',
+//           firstName : 'Priyanka',
+//           lastName : 'Patil',
+//           born : 1995,
+//           city : 'KOkan',
+//           state : 'Kankavali'
+// }
+
+// givin a default value to an object propety which is not in the object
+
+// const {died ='N/A', born, bio} = user2;
+
+
+// *****                END                       *****//
