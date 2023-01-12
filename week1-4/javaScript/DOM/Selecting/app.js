@@ -10,7 +10,8 @@
 // Creating/removing elements
 
 
-
+//getElementById
+// const toc = document.getElementById('toc');
 
 const allImages = document.getElementsByTagName('img');
 
