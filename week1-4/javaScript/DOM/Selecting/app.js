@@ -42,7 +42,11 @@ document.querySelector('h1');      //  returns element
 //   querySelectorAll
 // same idea, but returns a collection of matching elements
 
+const links = document.querySelectorAll('p a');
 
+for (let link of links) {
+    console.log(link.href);
+}
 
 
 
