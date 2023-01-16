@@ -110,3 +110,19 @@
 //     console.log( spans[i] = colors[i]);
     
 // }
+
+// const h2 = document.querySelector('h2');
+
+// h2.classList.toggle('purple');
+
+//Practice session
+// const list = document.querySelectorAll('li');
+
+// for(let l of list){
+    
+//     if(l.classList.contains('highlight') === true){
+//         l.classList.remove('highlight');
+//     }else{
+//         l.classList.add('highlight');
+//     }
+// }
