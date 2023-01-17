@@ -126,3 +126,99 @@
 //         l.classList.add('highlight');
 //     }
 // }
+
+
+
+// const firstBold = document.querySelector('b');
+// firstBold
+// ​
+// firstBold.parentElement
+// ​
+// firstBold.parentElement.parentElement
+// ​
+// firstBold.parentElement.parentElement.parentElement
+
+// firstBold.childElement
+
+// const paragraph = firstBold.parentElement
+
+// paragraph.children
+
+// paragraph.children[0]
+// ​
+// paragraph.children[0].parentElement
+
+
+// const squareImg = document.querySelector('.square');
+
+// squareImg.parentElement
+// ​
+// squareImg.childerm
+
+// squareImg.childern
+
+// squareImg.previousElementSibling
+// ​
+// squareImg.previousSibling
+
+// squareImg.nextElementSibling
+
+// squareImg.nextSibling
+
+
+// const newImg = document.createElement('img');
+
+// newImg.src ='https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80';
+
+// document.body.appendChild(newImg);
+
+// newImg.classList.add('square');
+
+// const newH3 =document.createElement('h3');
+
+// newH3.innerText = 'I am new';
+
+// document.body.appendChild(newH3);
+
+// console.log('hello');
+
+
+// hello
+// const p = document.querySelector('p');
+
+// p.append('helloccahsadla');
+
+// const newB = document.createElement('b');
+
+// newB.append('hi');
+
+// newB.append('p');
+
+// p.append(newB);
+
+// p.prepend(newB);
+
+// const h2 = document.createElement('h2');
+
+// h2.append("are adorable chickens")
+
+
+// const h1 = document.querySelector('h1');
+
+// h1.insertAdjacentElement('afterend',h2)   
+
+
+// const buttons = document.createElement('button');
+
+// buttons.append('HEY!');
+
+// const h1 = document.querySelector('h1');
+
+// document.body.appendChild(buttons);
+
+//   for(let i = 0; i <= 100; i++);
+//  {
+//     let buttons = document.createElement('button');
+//     buttons.append('HEY!');
+//     document.body.appendChild(buttons);
+//  }
