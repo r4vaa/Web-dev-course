@@ -222,3 +222,16 @@
 //     buttons.append('HEY!');
 //     document.body.appendChild(buttons);
 //  }
+
+//                  removeChild and remove           //
+
+
+// const newLi = document.querySelector('li');
+
+// const newUl = newLi.parentElement;
+
+// newUl.removeChild(newLi);
+
+
+// const newLi = document.querySelector('li');
+// newLi.remove();
