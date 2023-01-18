@@ -1,7 +1,22 @@
-.pokemon {
-    display: inline-block;
-    text-align: center;
+body {
+  background-color: black;
 }
+
+.pokemon {
+  display: inline-block;
+  text-align: center;
+}
+
 .pokemon img {
-    display: block;
+  display: block;
+}
+
+span {
+  color: rgb(89, 129, 89);
+  border: 1px solid rgb(89, 129, 89);
+  padding: 0 1rem 0 1rem;
+}
+
+h1 {
+  color: rgb(89, 129, 89);
 }
