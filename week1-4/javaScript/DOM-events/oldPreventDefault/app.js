@@ -60,17 +60,39 @@
   
 // })
 
-const input = document.querySelector('input');
-const h1 = document.querySelector('h1');
-
-input.addEventListener('input',function(e){
-      e.preventDefault();
-      const inputValue = input.value;
+// const input = document.querySelector('input');
+// const h1 = document.querySelector('h1');
+// const defaultH1 = 'Enter Your Username';
+// input.addEventListener('input',function(e){
+//       e.preventDefault();
+//       const inputValue = input.value;
      
-     if(inputValue === ''){
-       h1.innerText = 'Enter Your Username'
-     }else{
-      h1.innerText = `Welcome, ${inputValue}`;
-     }
+//      if(inputValue === ''){
+//        h1.innerText = defaultH1;
+//      }else{
+//       h1.innerText = `Welcome, ${inputValue}`;
+//      }
 
-})
+// })
+
+// Event Bubbling
+
+// const button = document.querySelector('#changeColor');
+// const container = document.querySelector('#container');
+
+// const makeRandColor = ()=>{
+//   const r = Math.floor(Math.random()*255)+1;
+//   const g = Math.floor(Math.random()*255)+1;
+//   const b = Math.floor(Math.random()*255)+1;
+//   return `rgb(${r},${g},${b})`;
+// }
+
+// button.addEventListener('click',function(e){
+//   container.style.backgroundColor = makeRandColor();
+//   e.stopPropagation();
+// })
+
+// container.addEventListener('click',function(){
+//   container.classList.add('hide');
+  
+// })
