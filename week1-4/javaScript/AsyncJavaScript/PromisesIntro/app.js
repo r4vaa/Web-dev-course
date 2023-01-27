@@ -52,9 +52,29 @@ const fakeRequestPromise = (url) => {
 
 //          PROMISES
 
+fakeRequestPromise('yelp.com/api/page1')
+	.then(() => {
+		console.log('it worked for page1')
+		return fakeRequestPromise('yelp.com/api/page2')
+	})
+	.then(() => {
+		console.log('it worked for page 2')
+		return fakeRequestPromise('yelp.com/api/page3')
+	})
+	.then(() => {
+		console.log('it worked for page 3')
+	})
+	.catch(() => {
+		console.log('OH NO, it Didnt worked')
+	})
 
-const request = fakeRequestPromise('yelp.com/api/coffee/page1');
-	request
+
+
+
+
+
+// const request = fakeRequestPromise('yelp.com/api/coffee/page1');
+// 	request
 // fakeRequestPromise('yelp.com/api/coffee/page1')
 // .then(() => {
 // 		console.log('it resolved');
