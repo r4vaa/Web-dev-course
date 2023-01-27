@@ -30,20 +30,22 @@
 // },1000)
 
 
-const delayedColor = (newColor, delayed , doNext) => {
-        setTimeout(() => {
-          document.body.style.backgroundColor = newColor;
-         doNext && doNext();
-        },delayed)
-}
+// const delayedColor = (newColor, delayed , doNext) => {
+//         setTimeout(() => {
+//           document.body.style.backgroundColor = newColor;
+//          doNext && doNext();
+//         },delayed)
+// }
 
-delayedColor('teal',1000, () => {
-  delayedColor('green',1000, () => {
-    delayedColor('blue',1000, () => {
-      delayedColor('red',1000, () => {
-        delayedColor('pink',1000, () => {
-        })
-      })
-    })
-  })
-});
+// delayedColor('teal',1000, () => {
+//   delayedColor('green',1000, () => {
+//     delayedColor('blue',1000, () => {
+//       delayedColor('red',1000, () => {
+//         delayedColor('pink',1000, () => {
+//         })
+//       })
+//     })
+//   })
+// });
+
+
