@@ -53,19 +53,23 @@ const fakeRequestPromise = (url) => {
 //          PROMISES
 
 fakeRequestPromise('yelp.com/api/page1')
-	.then(() => {
-		console.log('it worked for page1')
+	.then((data) => {
+		console.log('it worked for page1');
+		console.log(data)
 		return fakeRequestPromise('yelp.com/api/page2')
 	})
-	.then(() => {
+	.then((data) => {
 		console.log('it worked for page 2')
+		console.log(data)
 		return fakeRequestPromise('yelp.com/api/page3')
 	})
-	.then(() => {
+	.then((data) => {
 		console.log('it worked for page 3')
+		console.log(data);
 	})
-	.catch(() => {
+	.catch((err) => {
 		console.log('OH NO, it Didnt worked')
+		console.log(err);
 	})
 
 
