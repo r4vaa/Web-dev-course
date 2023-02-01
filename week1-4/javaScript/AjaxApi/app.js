@@ -17,18 +17,72 @@
 // HTTP verbs
 // Making XHRs via javascript
 
-const req = new XMLHttpRequest();
+// const req = new XMLHttpRequest();
 
-req.onload = function(){
-        console.log('its loaded');
-        const data = JSON.parse(this.responseText);
-        console.log(data.name , data.birth_year)
-}
+// req.onload = function(){
+//         console.log('its loaded');
+//         const data = JSON.parse(this.responseText);
+//         console.log(data.name , data.birth_year)
+// }
 
-req.onerror = function() {
-        console.log('error');
-        console.log(this);
-}
+// req.onerror = function() {
+//         console.log('error');
+//         console.log(this);
+// }
 
-req.open("GET","https://swapi.dev/api/people/1");
-req.send();
+// req.open("GET","https://swapi.dev/api/people/1");
+// req.send(); 
+
+//  Fetch with promises
+
+// fetch("https://swapi.dev/api/people/1")
+// .then((res) => {
+//         console.log('RESOLVEDssss', res)
+//         res.json().then(data => console.log(data.name))
+// })
+
+// .catch((e) => {
+//         console.log("ERROR!",e)
+// })
+
+
+// fetch("https://swapi.dev/api/people/1")
+// .then((res) => {
+//         console.log('RESOLVED', res)
+//         return res.json()
+// })
+// .then((data) => {
+//         console.log(data.name);
+//        return fetch("https://swapi.dev/api/people/2")
+// } )
+// .then((res) => {
+//         console.log("RESSS",res)
+//         return res.json();
+// })
+// .then((data) => {
+//         console.log(data)
+//         console.log(data.name);
+// })
+// .catch((e) => {
+//         console.log("ERROR!",e)
+// })
+
+
+// fetching data using asyc
+
+// const loadStarWarPeople = async () => {
+//         try{
+//                 const res =  await fetch("https://swapi.dev/api/people/1");
+//                 const data = await res.json();
+//                 console.log(data.name)
+         
+//                 const res1 = await fetch("https://swapi.dev/api/people/2");
+//                 const data1 = await res1.json();
+//                 console.log(data1.name)
+//         }
+//        catch(e){
+//         console.log("ERROR", e)
+//        }
+// }
+
+// loadStarWarPeople();
