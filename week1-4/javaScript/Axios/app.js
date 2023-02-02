@@ -23,26 +23,26 @@
 // getStarWarPerson(1);
 
 
-const jokes = document.querySelector('#jokes');
-const button = document.querySelector('button');
+// const jokes = document.querySelector('#jokes');
+// const button = document.querySelector('button');
 
 
 
-const addNewJoke = async() =>{
-        const joke = await getDadJoke();
-        const newLI = document.createElement('li');
-        newLI.append(joke)
-        jokes.append(newLI)  
-}
+// const addNewJoke = async() =>{
+//         const joke = await getDadJoke();
+//         const newLI = document.createElement('li');
+//         newLI.append(joke)
+//         jokes.append(newLI)  
+// }
 
-const getDadJoke = async() => {
-    try{
-    const config = { headers: { Accept: 'application/json' }}
-    const res = await axios.get('https://icanhazdadjoke.com/',config);
-    return res.data.joke
-    }catch(e){
-    return `NO JOKES AVAILABLE SORRY :(`
-    }
-}
+// const getDadJoke = async() => {
+//     try{
+//     const config = { headers: { Accept: 'application/json' }}
+//     const res = await axios.get('https://icanhazdadjoke.com/',config);
+//     return res.data.joke
+//     }catch(e){
+//     return `NO JOKES AVAILABLE SORRY :(`
+//     }
+// }
 
-button.addEventListener('click', addNewJoke)
+// button.addEventListener('click', addNewJoke)

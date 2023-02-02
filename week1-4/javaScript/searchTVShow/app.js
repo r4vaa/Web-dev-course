@@ -1,27 +1,29 @@
 // TV show search
 
+
+
 const form = document.querySelector('#searchForm');
-form.addEventListener('submit', async function(e){
+const button = document.querySelector('button');
+
+form.addEventListener('submit',async function(e){
     e.preventDefault();
-    const searchTerm = form.elements.query.value;
-    const config = {params: { q:searchTerm, isFunny: 'colt' }}
-    const res = await axios.get(`https://api.tvmaze.com/search/shows`,config)
-    makeImages(res.data)
+    const serachTerm = form.elements.query.value;
+    const config = {params : { q : serachTerm} }
+    const res = await axios.get(`https://api.tvmaze.com/search/shows`,config);
+    makeImages(res.data);
     form.elements.query.value = '';
-    
     
 })
 
 
 
-const makeImages = (shows) => {
-    for(let result of shows){
-    if(result.show.image)  {  
-        const img = document.createElement('IMG');
-        img.src = result.show.image.medium
-        document.body.append(img)
-    }
-    }
+const makeImages = (shows) =>{
+     for(let results of shows){
+        if(results.show.image){
+            const img = document.createElement('IMG');
+            img.src = results.show.image.medium;
+            document.body.append(img);
+        }
+        
+     }
 }
-
-
