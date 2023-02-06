@@ -13,16 +13,16 @@ const app = express()
 
 //  GETS THE REQUEST FOR HOMEPAGE OF /  AND GIVES A RESPONSE OF HOMEPAGE
 app.get('/',(req, res) => {
-    res.send('this is a home page');
+    res.send('<h1>Welcome this is a home page</h1>');
 })
 
 //GETS THE REQUEST FOR ANY REQUEST AFTER R/: AND GIVES A REPSONSE
 
 
-app.get('/r/:subreddit', (req, res) => {
-    console.dir(req.params)
-    res.send(`<h1>This is subreddit for ${subreddit}</h1>`);
-})
+// app.get('/r/:subreddit', (req, res) => {
+//     console.dir(req.params)
+//     res.send(`<h1>This is subreddit for ${subreddit}</h1>`);
+// })
 
 
 app.get('/r/:subreddit', (req, res) => {
@@ -56,6 +56,9 @@ app.get('/cats', (req, res) => {
 app.get('/dogs', (req , res) => {
     res.send('WOOOFFF');
 })
+
+
+// WHEN USER TRY TO SEARCH ANYTHING IN AN INPUT FORM WE USE QUERY STRING TO GET THE INPUT
 
 
 app.get('/search', (req, res) => {
