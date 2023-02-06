@@ -1,4 +1,5 @@
 const express =  require('express');
+const res = require('express/lib/response');
 
 const app = express()
 
@@ -16,6 +17,13 @@ app.get('/',(req, res) => {
 })
 
 //GETS THE REQUEST FOR ANY REQUEST AFTER R/: AND GIVES A REPSONSE
+
+
+app.get('/r/:subreddit', (req, res) => {
+    console.dir(req.params)
+    res.send(`<h1>This is subreddit for ${subreddit}</h1>`);
+})
+
 
 app.get('/r/:subreddit', (req, res) => {
     const { subreddit } = req.params;
@@ -49,10 +57,24 @@ app.get('/dogs', (req , res) => {
     res.send('WOOOFFF');
 })
 
+
+app.get('/search', (req, res) => {
+    const { q } = req.query;
+    if(!q){
+        res.send('NOTHING FOUND IF NOTHING SEARCHED');
+    }else{
+        res.send(`<h1>Search results for: ${q}</h1>`)
+    }
+    
+ })
+
+
+
 // TAKE ANY REQUEST FROM THE CLIENT AND GIVES A SPECIFIC RESPONE
 app.get('*', (req, res) => {
     res.send('WE DONT HAVE THIS TYPE OF URL, PLEASE CHECK')
 })
+
 
 
 app.listen(3000, () => {
