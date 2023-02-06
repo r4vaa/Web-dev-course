@@ -15,6 +15,23 @@ app.get('/',(req, res) => {
     res.send('this is a home page');
 })
 
+//GETS THE REQUEST FOR ANY REQUEST AFTER R/: AND GIVES A REPSONSE
+
+app.get('/r/:subreddit', (req, res) => {
+    const { subreddit } = req.params;
+    res.send(`<h1>Browsing the ${subreddit} of subreddit</h1>`);
+})
+
+
+//GETS THE REQUEST FOR ANY REQUEST AFTER R/:SUB/:POSTID AND GIVES A REPSONSE
+
+app.get('/r/:subreddit/:postId', (req, res) => {
+    const { subreddit , postId } = req.params;
+    res.send(`<h1>Viewing the PostId: ${postId} on the ${subreddit} of subreddit</h1>`);
+})
+
+
+
 //POST THE REQUEST THAT WE GET FROM CLIENT
 app.post('/cats', (req,res) => {
     res.send('this is a post request for cats')
