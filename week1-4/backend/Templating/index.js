@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const reddiData = require('./data.json');
+
 
 // this tells express app to use ejs.
 app.set('view engine','ejs');
@@ -11,9 +13,22 @@ app.get('/',(req, res) => {
     res.render('home')
 })
 
+app.get('/cats', (req ,res) => {
+    const cats = [
+        'dheeraj','priyanka','juhile','manish','kalu'
+    ]
+    res.render('cats',{cats});
+})
+
 app.get('/r/:subreddit', (req ,res) => {
     const { subreddit } = req.params
-    res.render('subreddit', {subreddit})
+    const data = reddiData[subreddit];
+    if(reddiData[subreddit]){
+        res.render('subreddit', {...data})
+    }else{
+        res.render('notfound',{ subreddit })
+    }
+    
 })
 
 
