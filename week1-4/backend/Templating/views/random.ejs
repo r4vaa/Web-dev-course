@@ -9,6 +9,13 @@
 <body>
     <!-- rand is an object key which will display the value of rand -->
     <h1>Your Random Number is: <%= rand %>  </h1>
+    <% if(rand % 2 === 0 ){ %>
+        <h2>That is an even number!</h2>
+    <% } else { %> 
+        <h2>This is an odd Number!</h2>
+    <% } %> 
+
+    <h3>That number is:<%= rand%2 ===0 ? 'EVEN' : 'ODD' %> </h3>
     
 </body>
 </html>
