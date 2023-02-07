@@ -11,6 +11,11 @@ app.get('/',(req, res) => {
     res.render('home')
 })
 
+app.get('/r/:subreddit', (req ,res) => {
+    const { subreddit } = req.params
+    res.render('subreddit', {subreddit})
+})
+
 
 // we can pass an object with the render, that renders the objects key value
 app.get('/rand', (req, res) => {
