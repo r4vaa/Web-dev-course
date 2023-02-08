@@ -3,6 +3,10 @@ const app = express();
 const path = require('path');
 const reddiData = require('./data.json');
 
+app.use(express.static(path.join(__dirname,'public')))
+app.use(express.static(path.join(__dirname,'js')))
+
+
 
 // this tells express app to use ejs.
 app.set('view engine','ejs');
