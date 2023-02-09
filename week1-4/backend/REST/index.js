@@ -55,7 +55,8 @@ app.get('/comments/new', (req ,res) => {
 app.post('/comments',(req , res) => {
     const {username , comment } = req.body;  // gets the data from the post req sent by client
     comments.push({username , comment})   // pushes the newly created data to database
-    res.send('it worked');   // displays the user that your comment is sucessfully submitted.
+    // res.send('it worked');   // displays the user that your comment is sucessfully submitted.
+    res.redirect('/comments');  // this will redirect to the comments page
 })
 
 
