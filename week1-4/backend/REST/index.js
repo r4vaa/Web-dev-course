@@ -14,19 +14,23 @@ app.set('view engine','ejs')
 // Rought data base currently for example
 
 const comments = [
-    {
+    {   
+        id : 1,
         username : 'Todd',
         comment : 'lol this is so funny!'
     },
     {
+        id : 2,
         username : 'Skyler',
         comment : 'it will be 879,000 dollars'
     }, 
     {
+        id : 3,
         username : 'Walter',
         comment : 'Say my NAme!, hesinberg'
     }, 
     {
+        id : 4,
         username : 'Jessi',
         comment : 'hehehehehe bitch'
     }
@@ -59,6 +63,13 @@ app.post('/comments',(req , res) => {
     res.redirect('/comments');  // this will redirect to the comments page
 })
 
+
+app.get('/comments/:id' , (req , res) => {
+    const{ id } = req.params;
+    const comment = comments.find( c => c.id === parseInt(id));
+    res.render('comments/show', { comment })
+
+})
 
 app.get('/tacos', (req, res) => {
     res.send('GET /tacos response')
