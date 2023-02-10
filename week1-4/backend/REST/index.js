@@ -18,7 +18,7 @@ app.set('view engine','ejs')
 
 // Rought data base currently for example
 
-const comments = [
+let comments = [
     {   
         id : uuid(),
         username : 'Todd',
@@ -91,6 +91,11 @@ app.patch('/comments/:id' , (req , res) => {
 })
 
 
+app.delete('/comments/:id', (req, res) => {
+    const { id } = req.params
+    comments = comments.filter(c => c.id !== id);
+    res.redirect('/comments')
+})
 
 app.get('/tacos', (req, res) => {
     res.send('GET /tacos response')
