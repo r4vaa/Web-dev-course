@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const { v4: uuid } = require('uuid');
+const { v4 : uuid } = require('uuid');
+
 
 app.use(express.urlencoded({extended : true}))
 app.use(express.json())
@@ -26,12 +27,12 @@ const comments = [
         comment : 'it will be 879,000 dollars'
     }, 
     {
-        id : uuid(),
+        id :uuid(),
         username : 'Walter',
         comment : 'Say my NAme!, hesinberg'
     }, 
     {
-        id :uuid(),
+        id : uuid(),
         username : 'Jessi',
         comment : 'hehehehehe bitch'
     }
@@ -59,7 +60,7 @@ app.get('/comments/new', (req ,res) => {
 
 app.post('/comments',(req , res) => {
     const {username , comment } = req.body;  // gets the data from the post req sent by client
-    comments.push({username , comment, id : uuid() })   // pushes the newly created data to database
+    comments.push({username , comment , id : uuid() })   // pushes the newly created data to database
     // res.send('it worked');   // displays the user that your comment is sucessfully submitted.
     res.redirect('/comments');  // this will redirect to the comments page
 })
@@ -70,6 +71,14 @@ app.get('/comments/:id' , (req , res) => {
     const comment = comments.find( c => c.id === id);
     res.render('comments/show', { comment })
 
+})
+
+app.patch('/comments/:id' , (req , res) => {
+    const { id } = req.params;    // find the id
+    const foundComment = comments.find( c =>  c.id === id ); // find the id 
+    const newCommentText = req.body.comment  // gets the new comment from the user
+    foundComment.comment = newCommentText;  // finding the old comment and updating it with the new
+    res.redirect('/comments')    // redirecting to comments/index
 })
 
 app.get('/tacos', (req, res) => {
