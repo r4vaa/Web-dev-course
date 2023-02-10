@@ -2,10 +2,13 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const { v4 : uuid } = require('uuid');
+const methodOverride = require('method-override');
 
 
 app.use(express.urlencoded({extended : true}))
 app.use(express.json())
+app.use(methodOverride('_method'));
+
 
 // to initialize view in our express app
 
@@ -73,6 +76,12 @@ app.get('/comments/:id' , (req , res) => {
 
 })
 
+app.get('/comments/:id/edit', (req , res) => {
+    const { id } = req.params;
+    const comment = comments.find( c => c.id === id);
+    res.render('comments/edit', { comment })
+})
+
 app.patch('/comments/:id' , (req , res) => {
     const { id } = req.params;    // find the id
     const foundComment = comments.find( c =>  c.id === id ); // find the id 
@@ -80,6 +89,8 @@ app.patch('/comments/:id' , (req , res) => {
     foundComment.comment = newCommentText;  // finding the old comment and updating it with the new
     res.redirect('/comments')    // redirecting to comments/index
 })
+
+
 
 app.get('/tacos', (req, res) => {
     res.send('GET /tacos response')
