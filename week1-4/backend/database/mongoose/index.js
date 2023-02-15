@@ -24,14 +24,14 @@ const movieSchema =  new mongoose.Schema({
 const Movie = mongoose.model('Movie', movieSchema)
 // const amadeus = new Movie({title : 'amadeus', year:1986 , score:9.2,rating:'R'})
 
-Movie.insertMany([
-    {title : 'Amelie', year:1986 , score:9.2,rating:'R'},
-    {title : 'Dragon Ball Z', year: 1999 , score:10,rating:'R'},
-    {title : 'Bleach', year: 1994 , score:8 ,rating:'PG'},
-    {title : 'One Piece', year: 1995 , score:9.9 ,rating:'R'},
-    {title : 'Fairy Tail', year:2010 , score:7.9,rating:'PG-13'}
-])
-.then(data => {
-    console.log('it WOrked!');
-    console.log(data);
-})
+// Movie.insertMany([
+//     {title : 'Amelie', year:1986 , score:9.2,rating:'R'},
+//     {title : 'Dragon Ball Z', year: 1999 , score:10,rating:'R'},
+//     {title : 'Bleach', year: 1994 , score:8 ,rating:'PG'},
+//     {title : 'One Piece', year: 1995 , score:9.9 ,rating:'R'},
+//     {title : 'Fairy Tail', year:2010 , score:7.9,rating:'PG-13'}
+// ])
+// .then(data => {
+//     console.log('it WOrked!');
+//     console.log(data);
+// })
