@@ -27,43 +27,43 @@ async function main() { await mongoose.connect('mongodb://127.0.0.1:27017/farmSt
 //     .catch(e => {
 //         console.log(e);
 //     })
-const seedProducts = [
+// const seedProducts = [
    
-    {
-        name : 'Fairy Eggplant',
-        price : 1.00,
-        category : 'vegetable'
-    },
-    {
-        name : 'Organic Goddess Melon',
-        price : 4.99,
-        category : 'fruit'
-    },
-    {
-        name : 'Organic Mini Seedless Watermelon',
-        price : 3.99,
-        category : 'fruit'
-    },
-    {
-        name : 'Organic Calery',
-        price : 1.59,
-        category : 'vegetable'
-    },
-    {
-        name : 'Chocolate Whole Milk',
-        price : 2.69,
-        category : 'dairy'
-    },
+//     {
+//         name : 'Fairy Eggplant',
+//         price : 1.00,
+//         category : 'vegetable'
+//     },
+//     {
+//         name : 'Organic Goddess Melon',
+//         price : 4.99,
+//         category : 'fruit'
+//     },
+//     {
+//         name : 'Organic Mini Seedless Watermelon',
+//         price : 3.99,
+//         category : 'fruit'
+//     },
+//     {
+//         name : 'Organic Calery',
+//         price : 1.59,
+//         category : 'vegetable'
+//     },
+//     {
+//         name : 'Chocolate Whole Milk',
+//         price : 2.69,
+//         category : 'dairy'
+//     },
      
-]
+// ]
 
-Product.insertMany(seedProducts)
-    .then(res => {
-        console.log(res)
-    })
-    .catch(e =>{
-        console.log(e)
-    })
+// Product.insertMany(seedProducts)
+//     .then(res => {
+//         console.log(res)
+//     })
+//     .catch(e =>{
+//         console.log(e)
+//     })
 
 
 
