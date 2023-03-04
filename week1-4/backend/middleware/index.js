@@ -28,14 +28,31 @@ app.use('/dogs',(req, res, next) => {
     next();
 })
 
+const verifyPassword = (req,res, next)=> {
+    const { password } = req.query;
+    if(password === 'chickennuggets'){
+        next();
+    }
+    // res.send('SOORY YOU REQUIRE PASSWORD');
+    throw new Error('Password Required please add it');
+}
+
 app.get('/', (req , res) => {
     console.log(`REQUEST DATE: ${req.requestTime}`);
     res.send('home PAGE!!')
 })
 
+app.get('/error', (req, res) => {
+    chicken.fly();
+})
+
 app.get('/dogs',(req, res) => {
     console.log(`REQUEST DATE: ${req.requestTime}`);
     res.send('WOFF WOOF')
+})
+
+app.get('/secret', verifyPassword ,(req, res ) => {
+    res.send('MY SECRET IS: i am afraid of everyone because i dont know what to do');
 })
 
 app.use((req, res) => {
