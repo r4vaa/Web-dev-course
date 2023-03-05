@@ -3,12 +3,13 @@ const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
+const AppError = require('./AppError');
 
 const Product =  require('./models/product');
 
 mongoose.set('strictQuery', false);
     main().catch(err => console.log(err));
-async function main() { await mongoose.connect('mongodb://127.0.0.1:27017/farmStand')
+async function main() { await mongoose.connect('mongodb://127.0.0.1:27017/farmStand2')
             .then(() => {
             console.log('Mongoose Connection OPen')
             })
@@ -38,7 +39,12 @@ app.get('/products', async (req, res) => {
     
 })
 
+app.get('/', (req, res) => {
+    res.send('THIS IS HOMEPAGE');
+})
+
 app.get('/products/new' , (req ,res ) => {
+    throw new AppError('NOT ALLOWED' , 401);
     res.render('products/new' , {categories});
 })
 
@@ -48,10 +54,13 @@ app.post('/products' ,async(req , res)=> {
     res.redirect(`/products/${newProduct._id}`)
 })
 
-app.get('/products/:id' , async( req, res ) => { 
+app.get('/products/:id' , async( req, res, next ) => { 
     const { id } = req.params;
     const product = await Product.findById(id);
-    console.log(product)
+    // console.log(product)
+    if(!product){
+      return next(new AppError('Product Not Found', 404 ))
+    }
     res.render('products/show' , { product })
 })
 
@@ -73,6 +82,11 @@ app.delete('/products/:id' , async(req, res) => {
     const { id } = req.params;
     const deletedProduct = await Product.findByIdAndDelete(id);
     res.redirect('/products');
+})
+
+app.use((err ,req, res , next )=> {
+    const { status = 500 , message = 'Something went Wrong'} = err;
+    res.status(status).send(message);
 })
 
 app.listen(3000, () => {
