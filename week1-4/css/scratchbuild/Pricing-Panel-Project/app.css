@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  
 }
 
 ol, ul {
@@ -145,7 +146,7 @@ body {
   color: white
 }
 
-@media(min-width:900px) {
+@media(min-width:500px) {
 
   .panel {
     flex-direction: row;
