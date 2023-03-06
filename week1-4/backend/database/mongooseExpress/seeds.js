@@ -5,7 +5,7 @@ const Product =  require('./models/product');
 
 mongoose.set('strictQuery', false);
 main().catch(err => console.log(err));
-async function main() { await mongoose.connect('mongodb://127.0.0.1:27017/farmStand2')
+async function main() { await mongoose.connect('mongodb://127.0.0.1:27017/farmStandTake2')
     .then(() => {
         console.log('Mongoose Connection OPen')
     })
