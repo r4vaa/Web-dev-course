@@ -45,16 +45,16 @@ const makeUser = async() => {
     console.log(res)
 }
 
-// const addAddress = async(id) => {
-//     const user = await User.findById(id);
-//     user.addresses.push({
-//         street : '1234 Sesame St.',
-//         city : 'New vasai',
-//         state : 'Naigoan',
-//         country : 'India'
-//     })
-//     const res = await user.save()
-//     console.log(res)
-// }
+const addAddress = async(id) => {
+    const user = await User.findById(id);
+    user.addresses.push({
+        street : '1234 Sesame St.',
+        city : 'New vasai',
+        state : 'Naigoan',
+        country : 'India'
+    })
+    const res = await user.save()
+    console.log(res)
+}
 
-// addAddress('640568214ac06da793aa808d');
+addAddress('640568214ac06da793aa808d');
