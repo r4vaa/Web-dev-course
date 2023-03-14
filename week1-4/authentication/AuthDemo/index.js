@@ -23,7 +23,7 @@ app.set('view engine', 'ejs');
 app.set('views','views');
 
 app.use(express.urlencoded({ extended : true }))
-app.use(session({secret: 'notagoodsecret'}))
+app.use(session({secret: 'notagoodsecret', saveUninitialized : true, resave : false}))
 
 app.get('/', (req, res) => {
     res.send('THIS IS HOME PAGE');
@@ -61,12 +61,17 @@ app.post('/login', async(req, res) => {
     }
 })
 
+app.post('/logout' , (req, res) => {
+    // req.session.user_id = null;
+    req.session.destroy();
+    res.redirect('/login');
+})
+
 app.get('/secret' , (req , res ) => {
     if(!req.session.user_id){
-        res.redirect('/login')
-    }else{
-        res.send('THIS IS SECRET! YOU CANNOT SEE ME UNLESS YOU ARE ADMIN')
-    }    
+       return res.redirect('/login')
+    }
+    res.render('secret');     
 })
 
 
