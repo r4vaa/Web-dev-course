@@ -1,6 +1,7 @@
-import Expenses from "./components/Expenses";
 
-function App() {
+import Expenses from "./components/Expenses/Expenses";
+
+const App = () => {
   const expenses = [
     {
        id: 'e1', title: 'Toilet Paper',amount: 94.12, date: new Date(2023, 7, 14)
@@ -15,6 +16,11 @@ function App() {
        id: 'e4', title: 'New Desk (Wooden)',amount: 450, date: new Date(2023, 5, 12)
      },
 ]
+  // under the hood of react jsx code
+    // return React.createElement('div',{},
+    // React.createElement('h2',{},"lets get Started"),
+    // React.createElement(Expenses, {items: expenses})
+    // );
 
   return (
     <div>
