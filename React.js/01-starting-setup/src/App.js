@@ -17,6 +17,10 @@ const App = () => {
        id: 'e4', title: 'New Desk (Wooden)',amount: 450, date: new Date(2023, 5, 12)
      },
 ]
+  const addExpenseHandler = expense => {
+    console.log('In app.js')
+    console.log(expense)
+  }
   // under the hood of react jsx code
     // return React.createElement('div',{},
     // React.createElement('h2',{},"lets get Started"),
@@ -25,7 +29,7 @@ const App = () => {
 
   return (
     <div>
-      <NewExpense/>
+      <NewExpense onAddExpense= {addExpenseHandler}/>
       <Expenses items={expenses}/>
     </div>
   );
